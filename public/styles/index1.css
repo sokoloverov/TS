@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 body {
-	background: #F2F2F2;
-	font-family: 'Lato', sans-serif;
+    background: #f2f2f2;
+    font-family: "Lato", sans-serif;
 }
 .main-container {
-	background: #fff;
-	width: 980px;
-	margin: 0 auto;
+    background: #fff;
+    width: 980px;
+    margin: 0 auto;
 }
 .header {
     border-bottom: 1px solid #828282;
@@ -26,6 +26,7 @@ body {
 .avatar {
     width: 55px;
     height: 55px;
+    border-radius: 100%;
 }
 .info p {
     margin: 0;
@@ -42,7 +43,7 @@ p.name {
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    color: #4F4F4F;    
+    color: #4f4f4f;
     display: flex;
     align-items: center;
 }
@@ -70,10 +71,11 @@ p.name {
 .search-filedset {
     border: none;
 }
-input, select {
+input,
+select {
     height: 40px;
     width: 100%;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 1px 4px;
 }
@@ -103,16 +105,16 @@ label {
     padding: 0 8px;
 }
 .providers {
-	display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .providers label {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 button {
-	background: #828282;
+    background: #828282;
     border-radius: 5px;
     border: none;
     padding: 10px 84px;
@@ -122,7 +124,7 @@ button {
 }
 .results {
     margin-top: 20px;
-} 
+}
 .search-results-header {
     display: flex;
     flex-direction: row;
@@ -144,7 +146,7 @@ button {
 .search-results-filter span {
     border-bottom: 1px dashed #828282;
     margin-right: 4px;
-} 
+}
 .search-results-filter select {
     width: 180px;
 }
@@ -212,7 +214,7 @@ p.price {
 }
 
 .result-info--descr {
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin-top: 20px;
     margin-bottom: 24px;
     font-size: 14px;
@@ -221,7 +223,7 @@ p.price {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-/*    position: absolute;
+    /*    position: absolute;
     width: 100%;
     bottom: 0;*/
 }
@@ -234,8 +236,8 @@ p.price {
     margin-bottom: 4px;
 }
 p.dashed {
-    border-bottom: 1px dashed #4F4F4F;
-    color: #4F4F4F;
+    border-bottom: 1px dashed #4f4f4f;
+    color: #4f4f4f;
     background: url(../img/chevron-down.png) no-repeat scroll 100%;
     padding-right: 24px;
     cursor: pointer;
@@ -246,7 +248,7 @@ p.dashed {
     justify-content: space-between;
 }
 .month span {
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
     width: 10px;
     height: 16px;
@@ -271,7 +273,7 @@ span.forward {
     padding: 8px 0;
     text-align: center;
     margin: 4px;
-    background: #E5E5E5;
+    background: #e5e5e5;
     font-size: 12px;
 }
 .days div.available {
@@ -286,7 +288,7 @@ span.forward {
 .availability {
     display: flex;
     align-items: center;
-    color: #4F4F4F;
+    color: #4f4f4f;
 }
 .available-colour {
     background: #099705;
@@ -295,15 +297,17 @@ span.forward {
     margin-right: 8px;
 }
 .text-right {
-	text-align: right;
+    text-align: right;
 }
-.before-results-block, .no-results-block {
+.before-results-block,
+.no-results-block {
     margin: 72px auto;
     padding: 24px;
     text-align: center;
     width: 350px;
 }
-.before-results-block img, .no-results-block img {
+.before-results-block img,
+.no-results-block img {
     margin: 0 auto;
     margin-bottom: 62px;
     width: 181px;
@@ -323,8 +327,8 @@ span.forward {
     border-bottom: 5px solid #079704;
 }
 .info-block.error {
-    border-bottom: 5px solid #D30000;
+    border-bottom: 5px solid #d30000;
 }
 .info-block p {
-    margin-bottom: 16px;    
+    margin-bottom: 16px;
 }
