@@ -1,6 +1,7 @@
 import { renderBlock } from './lib.js'
+import { searchFormCollect } from './search.js'
 
-export function renderSearchFormBlock(data1: string, data2: string) {
+export function renderSearchFormBlock(data1?: string, data2?: string) {
 
   const now = new Date();
   const dataMin = now.getFullYear() + '-' + (now.getMonth().toString() + 1) + '-' + now.getDate();
@@ -13,6 +14,8 @@ export function renderSearchFormBlock(data1: string, data2: string) {
   const now1 = new Date(now.getFullYear(), now.getMonth(), 31);
   const dataMax = now1.getFullYear() + '-' + (now1.getMonth().toString() + 2) + '-' + now1.getDate();
   console.log('dataMax ', dataMax);
+  console.log('form data', searchFormCollect());
+
 
   renderBlock(
     'search-form-block',
@@ -52,3 +55,8 @@ export function renderSearchFormBlock(data1: string, data2: string) {
     `
   )
 }
+
+
+
+
+
