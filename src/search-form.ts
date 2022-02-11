@@ -14,13 +14,19 @@ export function renderSearchFormBlock(data1?: string, data2?: string) {
   const now1 = new Date(now.getFullYear(), now.getMonth(), 31);
   const dataMax = now1.getFullYear() + '-' + (now1.getMonth().toString() + 2) + '-' + now1.getDate();
   console.log('dataMax ', dataMax);
-  console.log('form data', searchFormCollect());
+
+  const dataForm = document.getElementsByTagName('button');
+  dataForm.addEventListener('submit', (e: { target: any; }): void => {
+    console.log('event.target: ', e.target);
+    console.log('searchFormCollect:', searchFormCollect());
+  });
+
 
 
   renderBlock(
     'search-form-block',
     `
-    <form>
+    <form onsubmit="submit">
       <fieldset class="search-filedset">
         <div class="row">
           <div>
@@ -47,7 +53,7 @@ export function renderSearchFormBlock(data1?: string, data2?: string) {
             <input id="max-price" type="text" value="" name="price" class="max-price" />
           </div>
           <div>
-            <div><button>Найти</button></div>
+            <div><input type="submit" value="Найти"></div>
           </div>
         </div>
       </fieldset>
