@@ -1,12 +1,14 @@
 {
   "name": "typescriptproject",
   "version": "1.0.0",
+  "type": "module",
   "description": "my first ts",
   "main": "public/scripts/index.js",
   "scripts": {
     "build": "rd -r public\\scripts 2>null & tsc",
     "build:dev": "rd -r public\\scripts 2>null & tsc -tsconfig-dev.json ",
     "start": "http-server -p 3000",
+    "start:cli": "node public/scripts",
     "lint": "eslint src --ext .js --ext .ts",
     "lint-fix": "eslint src --ext .js --ext .ts --fix"
   },
